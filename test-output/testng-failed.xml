@@ -8,6 +8,7 @@
     <classes>
       <class name="api.test.TestBookingFlow">
         <methods>
+          <include name="test_DeleteBooking"/>
           <include name="test_CreateBooking"/>
           <include name="test_PartialUpdateBooking"/>
           <include name="setup"/>
