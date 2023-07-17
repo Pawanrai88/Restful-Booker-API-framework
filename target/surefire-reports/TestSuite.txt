@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.968 s <<< FAILURE! - in TestSuite
+test_PartialUpdateBooking(api.test.TestBookingFlow)  Time elapsed: 0.464 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [405]
+	at api.test.TestBookingFlow.test_PartialUpdateBooking(TestBookingFlow.java:72)
+

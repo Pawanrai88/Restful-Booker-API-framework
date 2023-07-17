@@ -1,379 +1,266 @@
-INFO    2023-07-17 16:24:13,621 [main] api.test.TestBookingFlow  - ******Request for Token*******
-DEBUG   2023-07-17 16:24:15,246 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:15,297 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:15,816 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
-DEBUG   2023-07-17 16:24:15,818 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
-DEBUG   2023-07-17 16:24:15,819 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:15,820 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:15,820 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
-DEBUG   2023-07-17 16:24:15,820 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /auth HTTP/1.1
-DEBUG   2023-07-17 16:24:15,821 [main] org.apache.http.wire  -  >> "POST /auth HTTP/1.1[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Content-Type: application/json[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Content-Length: 45[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "[\r][\n]"
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> POST /auth HTTP/1.1
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Accept: */*
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Content-Type: application/json
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Content-Length: 45
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Connection: Keep-Alive
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
-DEBUG   2023-07-17 16:24:15,822 [main] org.apache.http.wire  -  >> "{"username":"admin","password":"password123"}"
-DEBUG   2023-07-17 16:24:15,906 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Content-Length: 27[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Etag: W/"1b-/+MP27P0idjORMtCUwXC1WHUZqU"[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:24:15 GMT[\r][\n]"
-DEBUG   2023-07-17 16:24:15,907 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.wire  -  << "[\r][\n]"
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Server: Cowboy
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Connection: keep-alive
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << X-Powered-By: Express
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Content-Length: 27
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Etag: W/"1b-/+MP27P0idjORMtCUwXC1WHUZqU"
-DEBUG   2023-07-17 16:24:15,908 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:24:15 GMT
-DEBUG   2023-07-17 16:24:15,909 [main] org.apache.http.headers  - << Via: 1.1 vegur
-DEBUG   2023-07-17 16:24:15,911 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
-DEBUG   2023-07-17 16:24:15,920 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:15,921 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG   2023-07-17 16:24:15,959 [main] org.apache.http.wire  -  << "{"token":"06bd3438bc1aa34"}"
-DEBUG   2023-07-17 16:24:15,960 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6be8ce1b
-DEBUG   2023-07-17 16:24:15,960 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
-INFO    2023-07-17 16:24:16,565 [main] api.test.TestBookingFlow  - ******Token request successfully completed*******
-INFO    2023-07-17 16:24:16,588 [main] api.test.TestBookingFlow  - ******Create new Booking*******
-DEBUG   2023-07-17 16:24:16,613 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:16,614 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
-DEBUG   2023-07-17 16:24:16,959 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /booking HTTP/1.1
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "POST /booking HTTP/1.1[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Accept: application/json[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Content-Type: application/json[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Content-Length: 173[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.wire  -  >> "[\r][\n]"
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.headers  - >> POST /booking HTTP/1.1
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.headers  - >> Accept: application/json
-DEBUG   2023-07-17 16:24:16,960 [main] org.apache.http.headers  - >> Content-Type: application/json
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.headers  - >> Content-Length: 173
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.headers  - >> Connection: Keep-Alive
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
-DEBUG   2023-07-17 16:24:16,961 [main] org.apache.http.wire  -  >> "{"firstname":"Harvey","lastname":"Hermiston","totalprice":1454,"depositpaid":false,"bookingdates":{"checkin":"2023-07-27","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
-DEBUG   2023-07-17 16:24:17,047 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Content-Length: 201[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Etag: W/"c9-oBDzsPZpXx1IpMT2pxc7nY4fpQY"[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:24:16 GMT[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
-DEBUG   2023-07-17 16:24:17,048 [main] org.apache.http.wire  -  << "[\r][\n]"
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Server: Cowboy
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Connection: keep-alive
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << X-Powered-By: Express
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Content-Length: 201
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Etag: W/"c9-oBDzsPZpXx1IpMT2pxc7nY4fpQY"
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:24:16 GMT
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.headers  - << Via: 1.1 vegur
-DEBUG   2023-07-17 16:24:17,049 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
-DEBUG   2023-07-17 16:24:17,050 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:17,050 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG   2023-07-17 16:24:17,051 [main] org.apache.http.wire  -  << "{"bookingid":969,"booking":{"firstname":"Harvey","lastname":"Hermiston","totalprice":1454,"depositpaid":false,"bookingdates":{"checkin":"2023-07-27","checkout":"2023-07-21"},"additionalneeds":"Lunch"}}"
-DEBUG   2023-07-17 16:24:17,051 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@718d6b7c
-DEBUG   2023-07-17 16:24:17,051 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
-INFO    2023-07-17 16:24:17,071 [main] api.test.TestBookingFlow  - ******Booking created*******
-INFO    2023-07-17 16:24:17,089 [main] api.test.TestBookingFlow  - ******Retrieve the details of Booking*******
-DEBUG   2023-07-17 16:24:17,124 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:17,124 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /booking/969 HTTP/1.1
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "GET /booking/969 HTTP/1.1[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.wire  -  >> "[\r][\n]"
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.headers  - >> GET /booking/969 HTTP/1.1
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.headers  - >> Accept: */*
-DEBUG   2023-07-17 16:24:17,469 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
-DEBUG   2023-07-17 16:24:17,470 [main] org.apache.http.headers  - >> Connection: Keep-Alive
-DEBUG   2023-07-17 16:24:17,470 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-DEBUG   2023-07-17 16:24:17,470 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Content-Length: 173[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Etag: W/"ad-uQthkfLN6g/zgW65FZrGU0FtvQw"[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:24:17 GMT[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.wire  -  << "[\r][\n]"
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:17,558 [main] org.apache.http.headers  - << Server: Cowboy
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Connection: keep-alive
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << X-Powered-By: Express
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Content-Length: 173
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Etag: W/"ad-uQthkfLN6g/zgW65FZrGU0FtvQw"
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:24:17 GMT
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.headers  - << Via: 1.1 vegur
-DEBUG   2023-07-17 16:24:17,559 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
-DEBUG   2023-07-17 16:24:17,559 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:17,559 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG   2023-07-17 16:24:17,560 [main] org.apache.http.wire  -  << "{"firstname":"Harvey","lastname":"Hermiston","totalprice":1454,"depositpaid":false,"bookingdates":{"checkin":"2023-07-27","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
-DEBUG   2023-07-17 16:24:17,560 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@574f9e36
-DEBUG   2023-07-17 16:24:17,560 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
-INFO    2023-07-17 16:24:17,585 [main] api.test.TestBookingFlow  - ******Details are retrieved*******
-INFO    2023-07-17 16:24:17,588 [main] api.test.TestBookingFlow  - ******Update Fname and Lname of Booking*******
-DEBUG   2023-07-17 16:24:17,611 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:17,612 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: PATCH /booking/06bd3438bc1aa34 HTTP/1.1
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "PATCH /booking/06bd3438bc1aa34 HTTP/1.1[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Cookie: token=06bd3438bc1aa34[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Content-Length: 171[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.wire  -  >> "[\r][\n]"
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.headers  - >> PATCH /booking/06bd3438bc1aa34 HTTP/1.1
-DEBUG   2023-07-17 16:24:17,959 [main] org.apache.http.headers  - >> Cookie: token=06bd3438bc1aa34
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Accept: */*
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Content-Length: 171
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Connection: Keep-Alive
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
-DEBUG   2023-07-17 16:24:17,960 [main] org.apache.http.wire  -  >> "{"firstname":"Maggie","lastname":"Kerluke","totalprice":1454,"depositpaid":false,"bookingdates":{"checkin":"2023-07-27","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Content-Length: 170[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Etag: W/"aa-0ixily5LkeRD6JNK6mKZJCY5Y5o"[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:24:17 GMT[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.wire  -  << "[\r][\n]"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Server: Cowboy
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Connection: keep-alive
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << X-Powered-By: Express
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Content-Length: 170
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Etag: W/"aa-0ixily5LkeRD6JNK6mKZJCY5Y5o"
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:24:17 GMT
-DEBUG   2023-07-17 16:24:18,048 [main] org.apache.http.headers  - << Via: 1.1 vegur
-DEBUG   2023-07-17 16:24:18,049 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
-DEBUG   2023-07-17 16:24:18,049 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
-DEBUG   2023-07-17 16:24:18,049 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG   2023-07-17 16:24:18,050 [main] org.apache.http.wire  -  << "{"firstname":"Sally","lastname":"Smith","totalprice":577,"depositpaid":true,"bookingdates":{"checkin":"2019-12-09","checkout":"2020-05-22"},"additionalneeds":"Breakfast"}"
-DEBUG   2023-07-17 16:24:18,050 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c46dc02
-DEBUG   2023-07-17 16:24:18,050 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
-INFO    2023-07-17 16:24:18,051 [main] api.test.TestBookingFlow  - ******Update request completed*******
-INFO    2023-07-17 16:24:18,053 [main] api.test.TestBookingFlow  - ******Delete the Booking*******
-DEBUG   2023-07-17 16:24:18,060 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:18,060 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /booking/969 HTTP/1.1
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "DELETE /booking/969 HTTP/1.1[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Cookie: token=06bd3438bc1aa34[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.wire  -  >> "[\r][\n]"
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> DELETE /booking/969 HTTP/1.1
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Cookie: token=06bd3438bc1aa34
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Accept: */*
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Connection: Keep-Alive
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-DEBUG   2023-07-17 16:24:18,410 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Content-Length: 7[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:24:18 GMT[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.wire  -  << "[\r][\n]"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << HTTP/1.1 201 Created
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Server: Cowboy
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Connection: keep-alive
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << X-Powered-By: Express
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Content-Type: text/plain; charset=utf-8
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Content-Length: 7
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:24:18 GMT
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.headers  - << Via: 1.1 vegur
-DEBUG   2023-07-17 16:24:18,498 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
-DEBUG   2023-07-17 16:24:18,499 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: text/plain; charset=utf-8
-DEBUG   2023-07-17 16:24:18,499 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG   2023-07-17 16:24:18,499 [main] org.apache.http.wire  -  << "Created"
-DEBUG   2023-07-17 16:24:18,499 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4e933cf1
-DEBUG   2023-07-17 16:24:18,500 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
-INFO    2023-07-17 16:24:18,500 [main] api.test.TestBookingFlow  - ******Booking deleted*******
-DEBUG   2023-07-17 16:24:18,544 [main] freemarker.cache  - Couldn't find template in cache for "spark/spark.spa.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,545 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,546 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,546 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
-DEBUG   2023-07-17 16:24:18,547 [main] freemarker.cache  - Loading template for "spark/spark.spa.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
-DEBUG   2023-07-17 16:24:18,591 [main] freemarker.cache  - Couldn't find template in cache for "commons/commons-variables.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,591 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,591 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,592 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
-DEBUG   2023-07-17 16:24:18,592 [main] freemarker.cache  - Loading template for "commons/commons-variables.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
-DEBUG   2023-07-17 16:24:18,673 [main] freemarker.cache  - Couldn't find template in cache for "commons/commons-macros.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,673 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,673 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,673 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
-DEBUG   2023-07-17 16:24:18,673 [main] freemarker.cache  - Loading template for "commons/commons-macros.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
-DEBUG   2023-07-17 16:24:18,679 [main] freemarker.cache  - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,679 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,679 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,680 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
-DEBUG   2023-07-17 16:24:18,680 [main] freemarker.cache  - Loading template for "spark/macros/attributes.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
-DEBUG   2023-07-17 16:24:18,681 [main] freemarker.cache  - Couldn't find template in cache for "spark/macros/log.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,681 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,681 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,682 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
-DEBUG   2023-07-17 16:24:18,682 [main] freemarker.cache  - Loading template for "spark/macros/log.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
-DEBUG   2023-07-17 16:24:18,689 [main] freemarker.cache  - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,689 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,689 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,689 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
-DEBUG   2023-07-17 16:24:18,689 [main] freemarker.cache  - Loading template for "spark/macros/recurse_nodes.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
-DEBUG   2023-07-17 16:24:18,692 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:61652<->54.243.238.66:443 closed
-DEBUG   2023-07-17 16:24:18,692 [main] freemarker.cache  - "spark/macros/log.ftl"("en_CA", UTF-8, parsed) cached copy not yet stale; using cached.
-DEBUG   2023-07-17 16:24:18,692 [main] freemarker.cache  - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,693 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:61650<->54.243.238.66:443 closed
-DEBUG   2023-07-17 16:24:18,693 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:61651<->54.243.238.66:443 closed
-DEBUG   2023-07-17 16:24:18,693 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,693 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,693 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:61649<->54.243.238.66:443 closed
-DEBUG   2023-07-17 16:24:18,694 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
-DEBUG   2023-07-17 16:24:18,694 [main] freemarker.cache  - Loading template for "spark/macros/attr-common.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
-DEBUG   2023-07-17 16:24:18,701 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/head.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,701 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,702 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,702 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
-DEBUG   2023-07-17 16:24:18,702 [main] freemarker.cache  - Loading template for "spark/partials/head.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
-DEBUG   2023-07-17 16:24:18,705 [main] freemarker.cache  - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,705 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,706 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,706 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
-DEBUG   2023-07-17 16:24:18,706 [main] freemarker.cache  - Loading template for "commons/commons-inject-css.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
-DEBUG   2023-07-17 16:24:18,707 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,707 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,707 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,707 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
-DEBUG   2023-07-17 16:24:18,707 [main] freemarker.cache  - Loading template for "spark/partials/navbar.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
-DEBUG   2023-07-17 16:24:18,713 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,713 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,713 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,713 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
-DEBUG   2023-07-17 16:24:18,713 [main] freemarker.cache  - Loading template for "spark/partials/sidenav.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
-DEBUG   2023-07-17 16:24:18,725 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/test.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,725 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,726 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,726 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
-DEBUG   2023-07-17 16:24:18,726 [main] freemarker.cache  - Loading template for "spark/partials/test.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
-DEBUG   2023-07-17 16:24:18,734 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,736 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,736 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,737 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
-DEBUG   2023-07-17 16:24:18,737 [main] freemarker.cache  - Loading template for "spark/partials/standard-content.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
-DEBUG   2023-07-17 16:24:18,744 [main] freemarker.cache  - "spark/partials/standard-content.ftl"("en_CA", UTF-8, parsed) cached copy not yet stale; using cached.
-DEBUG   2023-07-17 16:24:18,745 [main] freemarker.cache  - "spark/partials/standard-content.ftl"("en_CA", UTF-8, parsed) cached copy not yet stale; using cached.
-DEBUG   2023-07-17 16:24:18,748 [main] freemarker.cache  - "spark/partials/standard-content.ftl"("en_CA", UTF-8, parsed) cached copy not yet stale; using cached.
-DEBUG   2023-07-17 16:24:18,749 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/exception.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,750 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,750 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,750 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
-DEBUG   2023-07-17 16:24:18,750 [main] freemarker.cache  - Loading template for "spark/partials/exception.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
-DEBUG   2023-07-17 16:24:18,751 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/category.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,752 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,752 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,752 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
-DEBUG   2023-07-17 16:24:18,752 [main] freemarker.cache  - Loading template for "spark/partials/category.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
-DEBUG   2023-07-17 16:24:18,753 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/device.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,753 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,753 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,753 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
-DEBUG   2023-07-17 16:24:18,753 [main] freemarker.cache  - Loading template for "spark/partials/device.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
-DEBUG   2023-07-17 16:24:18,754 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/author.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,755 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,755 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,755 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
-DEBUG   2023-07-17 16:24:18,755 [main] freemarker.cache  - Loading template for "spark/partials/author.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
-DEBUG   2023-07-17 16:24:18,756 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/log.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,756 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,756 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,756 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
-DEBUG   2023-07-17 16:24:18,756 [main] freemarker.cache  - Loading template for "spark/partials/log.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
-DEBUG   2023-07-17 16:24:18,758 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,759 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,759 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,759 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
-DEBUG   2023-07-17 16:24:18,759 [main] freemarker.cache  - Loading template for "spark/partials/dashboard.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
-DEBUG   2023-07-17 16:24:18,782 [main] freemarker.cache  - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,782 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,783 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,783 [main] freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
-DEBUG   2023-07-17 16:24:18,783 [main] freemarker.cache  - Loading template for "spark/partials/scripts.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
-DEBUG   2023-07-17 16:24:18,784 [main] freemarker.cache  - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_CA", UTF-8, parsed); will try to load it.
-DEBUG   2023-07-17 16:24:18,785 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_CA.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,785 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
-DEBUG   2023-07-17 16:24:18,785 [main] freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
-DEBUG   2023-07-17 16:24:18,785 [main] freemarker.cache  - Loading template for "commons/commons-inject-js.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/12363/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+INFO    2023-07-17 16:27:01,076 [main] api.test.TestBookingFlow  - ******Request for Token*******
+DEBUG   2023-07-17 16:27:03,136 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:03,198 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:03,707 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /auth HTTP/1.1
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "POST /auth HTTP/1.1[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Content-Type: application/json[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Content-Length: 45[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> POST /auth HTTP/1.1
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Content-Type: application/json
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Content-Length: 45
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2023-07-17 16:27:03,711 [main] org.apache.http.wire  -  >> "{"username":"admin","password":"password123"}"
+DEBUG   2023-07-17 16:27:03,807 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2023-07-17 16:27:03,807 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Content-Length: 27[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Etag: W/"1b-9O2uNAdibDqBQJAPCyup4oNA2oE"[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:27:03 GMT[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2023-07-17 16:27:03,810 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Server: Cowboy
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << X-Powered-By: Express
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Content-Length: 27
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Etag: W/"1b-9O2uNAdibDqBQJAPCyup4oNA2oE"
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:27:03 GMT
+DEBUG   2023-07-17 16:27:03,812 [main] org.apache.http.headers  - << Via: 1.1 vegur
+DEBUG   2023-07-17 16:27:03,814 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2023-07-17 16:27:03,814 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:03,814 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2023-07-17 16:27:03,860 [main] org.apache.http.wire  -  << "{"token":"2b496fc17e616d3"}"
+DEBUG   2023-07-17 16:27:03,860 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@42ff9a77
+DEBUG   2023-07-17 16:27:03,860 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+INFO    2023-07-17 16:27:04,668 [main] api.test.TestBookingFlow  - ******Token request successfully completed*******
+INFO    2023-07-17 16:27:04,692 [main] api.test.TestBookingFlow  - ******Create new Booking*******
+DEBUG   2023-07-17 16:27:04,736 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:04,736 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /booking HTTP/1.1
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "POST /booking HTTP/1.1[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Accept: application/json[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Content-Type: application/json[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Content-Length: 170[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> POST /booking HTTP/1.1
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Accept: application/json
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Content-Type: application/json
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Content-Length: 170
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2023-07-17 16:27:05,097 [main] org.apache.http.wire  -  >> "{"firstname":"Wayne","lastname":"Reichel","totalprice":2401,"depositpaid":false,"bookingdates":{"checkin":"2023-07-28","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
+DEBUG   2023-07-17 16:27:05,194 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Content-Length: 199[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Etag: W/"c7-qPwirBhKI2KjvNkjvoshoqH0jcE"[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:27:04 GMT[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Server: Cowboy
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << X-Powered-By: Express
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Content-Length: 199
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Etag: W/"c7-qPwirBhKI2KjvNkjvoshoqH0jcE"
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:27:04 GMT
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.headers  - << Via: 1.1 vegur
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2023-07-17 16:27:05,200 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:05,200 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2023-07-17 16:27:05,200 [main] org.apache.http.wire  -  << "{"bookingid":2408,"booking":{"firstname":"Wayne","lastname":"Reichel","totalprice":2401,"depositpaid":false,"bookingdates":{"checkin":"2023-07-28","checkout":"2023-07-21"},"additionalneeds":"Lunch"}}"
+DEBUG   2023-07-17 16:27:05,202 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@76220ef1
+DEBUG   2023-07-17 16:27:05,202 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+INFO    2023-07-17 16:27:05,219 [main] api.test.TestBookingFlow  - ******Booking created*******
+INFO    2023-07-17 16:27:05,227 [main] api.test.TestBookingFlow  - ******Retrieve the details of Booking*******
+DEBUG   2023-07-17 16:27:05,257 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:05,257 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:05,577 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /booking/2408 HTTP/1.1
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.wire  -  >> "GET /booking/2408 HTTP/1.1[\r][\n]"
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG   2023-07-17 16:27:05,581 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> GET /booking/2408 HTTP/1.1
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+DEBUG   2023-07-17 16:27:05,582 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Content-Length: 170[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Etag: W/"aa-+7yaWvg8hSlCpnPdjpCtO0s+z2w"[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:27:05 GMT[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Server: Cowboy
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << X-Powered-By: Express
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Content-Length: 170
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Etag: W/"aa-+7yaWvg8hSlCpnPdjpCtO0s+z2w"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:27:05 GMT
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.headers  - << Via: 1.1 vegur
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2023-07-17 16:27:05,660 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:05,660 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.wire  -  << "{"firstname":"Wayne","lastname":"Reichel","totalprice":2401,"depositpaid":false,"bookingdates":{"checkin":"2023-07-28","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@32caae19
+DEBUG   2023-07-17 16:27:05,660 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+INFO    2023-07-17 16:27:05,693 [main] api.test.TestBookingFlow  - ******Details are retrieved*******
+INFO    2023-07-17 16:27:05,693 [main] api.test.TestBookingFlow  - ******Update Fname and Lname of Booking*******
+DEBUG   2023-07-17 16:27:05,712 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:05,712 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: PATCH /booking/2b496fc17e616d3 HTTP/1.1
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.wire  -  >> "PATCH /booking/2b496fc17e616d3 HTTP/1.1[\r][\n]"
+DEBUG   2023-07-17 16:27:06,049 [main] org.apache.http.wire  -  >> "Cookie: token=2b496fc17e616d3[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Content-Length: 170[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> PATCH /booking/2b496fc17e616d3 HTTP/1.1
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Cookie: token=2b496fc17e616d3
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Content-Length: 170
+DEBUG   2023-07-17 16:27:06,051 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
+DEBUG   2023-07-17 16:27:06,052 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2023-07-17 16:27:06,052 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+DEBUG   2023-07-17 16:27:06,052 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2023-07-17 16:27:06,052 [main] org.apache.http.wire  -  >> "{"firstname":"Quentin","lastname":"Yundt","totalprice":2401,"depositpaid":false,"bookingdates":{"checkin":"2023-07-28","checkout":"2023-07-21"},"additionalneeds":"Lunch"}"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Content-Length: 171[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Etag: W/"ab-e4s6PKeIWkNkYm2Z5U+6dTey8wE"[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:27:05 GMT[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Server: Cowboy
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << X-Powered-By: Express
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Content-Length: 171
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Etag: W/"ab-e4s6PKeIWkNkYm2Z5U+6dTey8wE"
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:27:05 GMT
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.headers  - << Via: 1.1 vegur
+DEBUG   2023-07-17 16:27:06,138 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2023-07-17 16:27:06,138 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+DEBUG   2023-07-17 16:27:06,138 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2023-07-17 16:27:06,144 [main] org.apache.http.wire  -  << "{"firstname":"Mary","lastname":"Wilson","totalprice":810,"depositpaid":false,"bookingdates":{"checkin":"2017-01-05","checkout":"2019-02-21"},"additionalneeds":"Breakfast"}"
+DEBUG   2023-07-17 16:27:06,144 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@614cd187
+DEBUG   2023-07-17 16:27:06,144 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+INFO    2023-07-17 16:27:06,144 [main] api.test.TestBookingFlow  - ******Update request completed*******
+INFO    2023-07-17 16:27:06,146 [main] api.test.TestBookingFlow  - ******Delete the Booking*******
+DEBUG   2023-07-17 16:27:06,154 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:06,154 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restful-booker.herokuapp.com:443
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /booking/2408 HTTP/1.1
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "DELETE /booking/2408 HTTP/1.1[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Cookie: token=2b496fc17e616d3[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> DELETE /booking/2408 HTTP/1.1
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Cookie: token=2b496fc17e616d3
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Authorization: Basic=YWRtaW46cGFzc3dvcmQxMjM=
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Host: restful-booker.herokuapp.com
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+DEBUG   2023-07-17 16:27:06,499 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Content-Length: 7[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Date: Mon, 17 Jul 2023 23:27:06 GMT[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << HTTP/1.1 201 Created
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Server: Cowboy
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << X-Powered-By: Express
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Content-Type: text/plain; charset=utf-8
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Content-Length: 7
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Date: Mon, 17 Jul 2023 23:27:06 GMT
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.headers  - << Via: 1.1 vegur
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2023-07-17 16:27:06,592 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsing response as: text/plain; charset=utf-8
+DEBUG   2023-07-17 16:27:06,592 [main] io.restassured.internal.RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.wire  -  << "Created"
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4780341
+DEBUG   2023-07-17 16:27:06,592 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+INFO    2023-07-17 16:27:06,592 [main] api.test.TestBookingFlow  - ******Booking deleted*******
