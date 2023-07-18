@@ -117,8 +117,9 @@
           <version>3.8.0</version>
         </plugin>
         <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M9</version>
+          <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M9</version>
           <executions>
 			<execution>
 				<phase>test</phase>
@@ -129,7 +130,7 @@
 		</executions>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>C:\Users\12363\eclipse-workspace\LambdaTest\testng.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\12363\eclipse-workspace\HEROKUAPP\testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         </plugin>
